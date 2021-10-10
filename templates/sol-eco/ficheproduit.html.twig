@@ -1,0 +1,29 @@
+{% extends 'base-sol-eco.html.twig' %} {% block title %}Sol Ecologique{%
+endblock %} {% block body %}
+<div class="container">
+  <div class="card mb-3">
+    <div class="card-header">Tableau de Bord</div>
+    <div class="row g-0">
+      <div class="col-md-8">
+        <img
+          src="{{
+            asset(
+              '/images/sol-eco/fiche-produit/076-Tableau-sol-ecologique.png'
+            )
+          }}"
+          class="img-fluid rounded-start"
+          alt="tableau de bord"
+        />
+      </div>
+      <div class="col-md-4">
+        <div class="card-body">
+          <h5 class="card-title">Ajouter (ou gérer) un produit au Catalogue</h5>
+          <p class="card-text">
+            Sélectionner "Produits" dans la colonne gauche
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

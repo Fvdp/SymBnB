@@ -1,0 +1,88 @@
+{% extends 'base-sol-eco.html.twig' %} {% block title %}Sol Ecologique{%
+endblock %} {% block body %}
+<div class="container">
+  <h1 class="my-3">Voici la documentation de Sol-Ecologique.com</h1>
+  <p>
+    Connectez-vous, avec votre identifiant et votre mot de passe, sur le
+    back-office de la boutique en ligne (l'URL du back-office est transmis par
+    votre webmaster)
+  </p>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card bg-light mb-3">
+        <div class="card-header text-center">
+          Fiche produit
+          <br />
+        </div>
+        <a href="{{ path('fiche-produit') }}">
+          <img
+            src="{{
+              asset(
+                '/images/sol-eco/fiche-produit/076-Tableau-sol-ecologique.png'
+              )
+            }}"
+            alt="tableau de bord"
+            style="height: 100%; width: 100%; display: block"
+          />
+        </a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="{{ path('fiche-produit') }}"> </a>
+          </h4>
+          <p class="card-text">
+            Créer/gérer les produits de votre boutique en ligne.
+          </p>
+          <p class="card-text">
+            <small class="text-muted"
+              >Pré-requis pour fiche produit :
+              <ul>
+                <li>
+                  une ou plusieurs images de l’article, taille recommandée
+                  800x800px, format jpg, gif ou png
+                </li>
+                <li>
+                  Le prix d’achat, prix de vente au m2 le cas échéant, la
+                  surface au paquet (pour calcul prix au paquet)
+                </li>
+                <li>la référence de chaque déclinaison de l’article</li>
+              </ul>
+            </small>
+          </p>
+          <a href="{{ path('fiche-produit') }}" class="btn btn-secondary"
+            >En savoir plus...</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-12">
+      <div class="card bg-light mb-3">
+        <div class="card-header text-center">
+          Commande Client
+          <br />
+        </div>
+        <a href="{{ path('commande') }}">
+          <img
+            src="{{
+              asset('/images/sol-eco/commande/088-Commandes-sol-ecologique.png')
+            }}"
+            alt="tableau de bord"
+            style="height: 100%; width: 100%; display: block"
+          />
+        </a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="{{ path('commande') }}"> </a>
+          </h4>
+          <p class="card-text">
+            Gérer les commandes de votre boutique en ligne.
+          </p>
+          <a href="{{ path('commande') }}" class="btn btn-secondary"
+            >En savoir plus...</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
