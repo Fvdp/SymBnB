@@ -1,118 +1,60 @@
-{% extends 'base.html.twig' %}
-
-{% block title %}
-   Bienvenue sur le meilleur réseau d'appartements
-{% endblock %}
-
-{% block body %}
+{% extends 'base.html.twig' %} {% block title %} FAQ fvwebsite {% endblock %} {%
+block body %}
 <div class="container">
   <div class="jumbotron mt-3">
-    <h1 class="display-3">Bienvenue sur SymBnB</h1>
-    <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt maiores fugiat illum quod distinctio sint tempore laborum sapiente eos delectus doloremque nemo fugit culpa qui, architecto, nobis suscipit iste explicabo!</p>
-    <hr class="my-4">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate reiciendis nam, dolorem aliquam consectetur dolores assumenda cum voluptas doloremque dicta? Eum cum porro inventore eveniet esse! Asperiores necessitatibus itaque reiciendis.</p>
-    <p class="lead">
-      <a class="btn btn-primary btn-lg" href="#" role="button">Voir les annonces</a>
-    </p>
+    <h1 class="display-3">
+      Bienvenue dans l'espace formation et documentation de fvwebsite
+    </h1>
   </div>
 
-  <h2 class="h1 mt-3 mb-4">Nos appartements  stars !</h2>
+  <h2 class="h1 mt-3 mb-4">Sites web et projets :</h2>
 
   <div class="row">
     <div class="col-md-4">
       <div class="card bg-light mb-3">
         <div class="card-header text-center">
-          3 chambres, <strong>49&euro; / nuit</strong> <br>
-          <small>Pas encore noté</small>
+          Sol-ecologique<br />
+          <small>En cours de dev</small>
         </div>
 
-        <img src="http://placehold.it/1000x400" alt="Image de l'appartement" style="height: 200px; width: 100%; display: block">
+        <img
+          src="https://dev.sol-ecologique.com/img/sol-ecologique-logo-1631817299.jpg"
+          alt="logo sol-ecologique"
+          style="height: 200px; width: 100%; display: block"
+        />
 
         <div class="card-body">
-          <h4 class="card-title">
-            Appartement top !
-          </h4>
+          <h4 class="card-title">formation et procèdures</h4>
           <p class="card-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ut labore culpa illo corrupti debitis cupiditate rerum esse, asperiores autem.
+            Toute la documentation pour l'utilisation du back-office du CMS
+            Sol-Ecologique (procèdure fiche produit, gestion commandes, suivi
+            clients, ...)
           </p>
-          <a href="#" class="btn btn-secondary">En savoir plus...</a>
+          <a href="{{ path('sol-eco') }}" class="btn btn-secondary"
+            >C'est par ici...</a
+          >
         </div>
       </div>
     </div>
     <div class="col-md-4">
       <div class="card bg-light mb-3">
-        <div class="card-header text-center">
-          3 chambres, <strong>49&euro; / nuit</strong> <br>
-          <small>Pas encore noté</small>
-        </div>
+        <div class="card-header text-center">2CV<br /></div>
 
-        <img src="http://placehold.it/1000x400" alt="Image de l'appartement" style="height: 200px; width: 100%; display: block">
-
-        <div class="card-body">
-          <h4 class="card-title">
-            Appartement top !
-          </h4>
-          <p class="card-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ut labore culpa illo corrupti debitis cupiditate rerum esse, asperiores autem.
-          </p>
-          <a href="#" class="btn btn-secondary">En savoir plus...</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card bg-light mb-3">
-        <div class="card-header text-center">
-          3 chambres, <strong>49&euro; / nuit</strong> <br>
-          <small>Pas encore noté</small>
-        </div>
-
-        <img src="http://placehold.it/1000x400" alt="Image de l'appartement" style="height: 200px; width: 100%; display: block">
+        <img
+          src="https://fvwebsite.com/2cv/images/rigal-meyral/rigal_1.jpg"
+          alt="2cv"
+          style="width: 100%; display: block"
+        />
 
         <div class="card-body">
-          <h4 class="card-title">
-            Appartement top !
-          </h4>
-          <p class="card-text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora ut labore culpa illo corrupti debitis cupiditate rerum esse, asperiores autem.
-          </p>
-          <a href="#" class="btn btn-secondary">En savoir plus...</a>
+          <h4 class="card-title">Documentation sur 2CV</h4>
+          <p class="card-text">Notice, liens utiles, ...</p>
+          <a href="https://fvwebsite.com/2cv/" class="btn btn-secondary"
+            >C'est par ici...</a
+          >
         </div>
       </div>
     </div>
   </div>
-
-  <h2 class="h1 mt-3 mb-4">Nos propriétaires !</h2>
-
-  <div class="row">
-    <div class="col">
-      <div class="card border-secondary mb-3">
-        <div class="card-body">
-          <h4 class="card-title">Frédéric Vandenplas</h4>
-          <hr>
-
-          <div class="card-texte">
-            <img src="http://placehold.it/64x64" alt="Avatar de Fred" class="float-left mr-3">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, cupiditate.</p>
-            <a href="#" class="btn btn-success float-right">En savoir plus...</a>
-          </div>
-        </div>
-      </div>    
-    </div>
-    <div class="col">
-      <div class="card border-secondary mb-3">
-        <div class="card-body">
-          <h4 class="card-title">Frédéric Vandenplas</h4>
-          <hr>
-
-          <div class="card-texte">
-            <img src="http://placehold.it/64x64" alt="Avatar de Fred" class="float-left mr-3">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, cupiditate.</p>
-            <a href="#" class="btn btn-success float-right">En savoir plus...</a>
-          </div>
-        </div>
-      </div>    
-    </div>
-  </div>
-
 </div>
 {% endblock %}
